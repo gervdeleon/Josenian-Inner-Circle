@@ -1,0 +1,377 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Josenian Inner Circle</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Normailize Stylesheet -->
+    <link rel="stylesheet" href="../css/normalize.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../css/templatemo_style.css">
+
+    
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="../js/vendor/jquery-1.10.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery.gmap3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/plugins.js"></script>
+
+
+</head>
+<body>
+
+    <header class="site-header" id="top">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="logo-wrapper">
+                            <a class="navbar-brand" href="#">
+                                <img src="../logos/JIC3.png">
+                                <span class="logo-s"></span>
+                            </a>
+                        </div>  
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <span class="nav-s"></span>
+                            <li><a href="../index.html">Home</a></li>
+                            <!-- <li><a href="#product-inner">Products</a></li> -->
+                            <li><a href="profile.html">Profile</a>
+                            </li>
+                            <li><a href="#mod">Questions</a></li>
+                            <li><a href="#contact">Message</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </nav>
+    </header>
+
+    <div class="top-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-holder">
+                        <img src="../logos/JIC2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>JOSENIAN INNER CIRCLE</h4>
+                    <h1>
+
+                    </h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="products">
+        <div class="container">
+            <div class="row" id="product-inner">
+                <div class="col-md-4 product-item text-center">
+                    <div class="image-holder">
+<!--                         <img src="images/PHIL.png" alt="">
+-->                    </div>
+</div>
+<div class="col-md-4 text-center">
+    <div class="circle">
+        <img src="../logos/USJR2.png" 
+        align="middle">
+    </div>
+</div>
+<div class="col-md-4 product-item text-center">
+    <div class="image-holder">
+<!--                         <img src="images/PAWN.png" alt="">
+-->                    </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="width:500px; margin-left:20px;" id="mod">
+  View Questions from this Department
+</button>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#studentModal" style="width:500px;">
+  View Students from this Department
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">gervdeleon(username sa nangutana)</h4>
+      </div>
+      <div class="modal-body">
+        Who am I?
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#answerModal">
+        Answer
+        </button>
+        <button type="button" class="btn btn-danger">Like</button>
+        <button type="button" class="btn btn-default">Share</button>
+      </div>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">gervdeleon(username sa nangutana)</h4>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Answer</button>
+        <button type="button" class="btn btn-danger">Like</button>
+        <button type="button" class="btn btn-default">Share</button>
+      </div>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">gervdeleon(username sa nangutana)</h4>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Answer</button>
+        <button type="button" class="btn btn-danger">Like</button>
+        <button type="button" class="btn btn-default">Share</button>
+      </div><div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">gervdeleon(username sa nangutana)</h4>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Answer</button>
+        <button type="button" class="btn btn-danger">Like</button>
+        <button type="button" class="btn btn-default">Share</button>
+      </div><div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">gervdeleon(username sa nangutana)</h4>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Answer</button>
+        <button type="button" class="btn btn-danger">Like</button>
+        <button type="button" class="btn btn-default">Share</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Answer Modal -->
+<div class="modal fade" id="answerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Answer</h4>
+      </div>
+      <div class="modal-body">
+        <form action="#" method="post">  
+         <fieldset class="col-md-12">
+            <textarea name="answer" id="answer" placeholder="Answer Question..."></textarea>
+            </fieldset>
+      </form>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary"> 
+        Submit Answer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Student Modal -->
+<div class="modal fade" id="studentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">jeliinedobolI</h4>
+      </div>
+      <div class="modal-body">
+        Geryline Rosario
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary">Add to Inner Circle</button>
+      </div>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">gervdeleon
+        </h4>
+      </div>
+      <div class="modal-body">
+        Gervin de Leon
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Add to Inner Circle</button>
+      </div>
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">fretefretz
+        </h4>
+      </div>
+      <div class="modal-body">
+        Frete Dela Rosa
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Add to Inner Circle</button>
+      </div><div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">pangsypangs
+        </h4>
+      </div>
+      <div class="modal-body">
+        Stephanie Nicole Gozon
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Add to Inner Circle</button>
+      </div><div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">imneilthegreat</h4>
+      </div>
+      <div class="modal-body">
+        Neil Magallon
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Add to Inner Circle</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="lightbox">   
+    <form action="#" method="post">
+<!--         <div class="lightbox-close">  
+ -->        <br><br>    
+         <fieldset class="col-md-12">
+            <textarea name="question" id="question" placeholder="Ask Question..."></textarea>
+            </fieldset>
+            <fieldset class="col-md-12">
+            <button type="button" 
+            class="btn btn-primary btn-lg">
+            Ask Question
+            
+            </fieldset>
+<!--         </div>
+ -->           </form>
+       
+       
+</div>
+  
+
+        <br><br><br><br><br><br>
+        <div id="bottom-section">
+            <div class="container" id="promotion">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="right-one">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container" id="contact">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="contact-form">
+                            <!-- <h2>CONTACT US</h2> -->
+                            <span>SEND A MESSAGE</span>
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <fieldset class="col-md-6">
+                                        <input type="text" name="name" id="name" placeholder="Name...">
+                                    </fieldset>
+                                    <fieldset class="col-md-6">
+                                        <input type="email" name="email" id="email" placeholder="Email Address...">
+                                    </fieldset>
+                                    <fieldset class="col-md-12">
+                                        <textarea name="message" id="message" placeholder="Message..."></textarea>
+                                    </fieldset>
+                                    <fieldset class="col-md-12">
+                                        <input type="submit" id="button-message" value="Send Message">
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <p>Copyright © 2015 Josenian Inner Circle| Design: <a href="http://www.templatemo.com">templatemo</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="social">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+    </html>
